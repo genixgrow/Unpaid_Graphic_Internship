@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply Internship</title>
+  <link rel="icon" type="image/x-icon" href="./Sambal.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: linear-gradient(to right, #8dc440, #629e42);
+      font-family: 'Inter', sans-serif;
+    }
+
+    .formbold-main-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .formbold-form-wrapper {
+      width: 100%;
+      max-width: 600px;
+      background-image: linear-gradient(to right, #629e42, #8dc440);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .formbold-img {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 50%;
+      max-width: 300px;
+      transition: all 1s;
+    }
+
+    .logo:hover {
+      width: 60%;
+    }
+
+    .formbold-form-title h2 {
+      font-weight: 600;
+      font-size: 24px;
+      color: #ffffff;
+      text-align: left;
+    }
+
+    .formbold-form-label {
+      font-size: 14px;
+      color: #ffffff;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .formbold-form-input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      background: transparent;
+      font-size: 14px;
+      color: #ffffff;
+      outline: none;
+      margin-bottom: 15px;
+    }
+
+    .formbold-form-input:focus {
+      border-color: #ffffff;
+      box-shadow: 0px 3px 8px rgba(255, 255, 255, 0.3);
+    }
+
+    .formbold-input-flex {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .formbold-input-flex > div {
+      flex: 1;
+      min-width: 120px;
+    }
+
+    .formbold-checkbox-label {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    .formbold-btn {
+      width: 100%;
+      font-size: 16px;
+      border-radius: 5px;
+      padding: 10px;
+      border: none;
+      font-weight: 500;
+      background-color: #ffffff;
+      color: #629e42;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .formbold-btn:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Media Queries */
+
+    @media (max-width: 768px) {
+      .formbold-form-title h2 {
+        font-size: 20px;
+      }
+
+      .formbold-form-label {
+        font-size: 13px;
+      }
+
+      .formbold-form-input {
+        font-size: 13px;
+        padding: 8px;
+      }
+
+      .formbold-btn {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        width: 70%;
+      }
+
+      .formbold-form-title h2 {
+        font-size: 18px;
+      }
+
+      .formbold-form-label {
+        font-size: 12px;
+      }
+
+      .formbold-btn {
+        font-size: 14px;
+      }
+
+      .formbold-input-flex {
+        flex-direction: column;
+      }
+
+      .formbold-input-flex > div {
+        min-width: 100%;
+      }
+    }
+    ::placeholder {
+    color: rgb(230, 230, 230);
+  }
+
+  </style>
+</head>
+<body>
+  </div>
+  <div class="formbold-main-wrapper">
+    <div class="formbold-form-wrapper">
+      <div class="formbold-img">
+        <img src="./Master File copy.png" class="logo" alt="Logo">
+      </div>
+      <form id="myForm">
+        <div class="formbold-form-title">
+          <h2>Essay Apply</h2>
+    
+          <h2 id="msg"></h2>
+
+          <br>
+        </div>
+
+        <div class="formbold-input-flex">
+          <div>
+            <label for="firstname" class="formbold-form-label">First Name</label>
+            <input type="text" name="firstname" id="firstname" class="formbold-form-input" required placeholder="First Name">
+          </div>
+          <div>
+            <label for="lastname" class="formbold-form-label">Last Name</label>
+            <input type="text" name="lastname" id="lastname" class="formbold-form-input" placeholder="Last Name" required>
+          </div>
+        </div>
+
+        <div class="formbold-input-flex">
+          <div>
+            <label for="email" class="formbold-form-label">Email</label>
+            <input type="email" name="email" id="email" class="formbold-form-input" placeholder="example@gmail.com" required>
+          </div>
+          <div>
+            <label for="phone" class="formbold-form-label">Phone Number</label>
+            <input type="text" name="phone" id="phone" class="formbold-form-input" placeholder="+92 000 000 0000" required>
+          </div>
+        </div>
+
+        <div class="formbold-input-flex">
+          <div>
+            <label for="birthday" class="formbold-form-label">Birthday</label>
+            <input type="date" name="birthday" id="birthday" class="formbold-form-input" required>
+          </div>
+          <div>
+            <label class="formbold-form-label">Expert in</label>
+            <label class="formbold-checkbox-label">
+              <input type="checkbox" name="pSexpertise" value="photoshop" class="expertise-option">
+              &nbsp;Adobe Photoshop
+            </label>
+            <label class="formbold-checkbox-label">
+              <input type="checkbox" name="aIexpertise" value="illustrator" class="expertise-option">
+              &nbsp;Adobe Illustrator
+            </label>
+            <label class="formbold-checkbox-label">
+              <input type="checkbox" name="iDexpertise" value="indesign" class="expertise-option">
+              &nbsp;Adobe InDesign
+            </label>
+            <label class="formbold-checkbox-label">
+              <input type="checkbox" name="expertise" value="other" id="other-option">
+              &nbsp;Other
+          </div>
+        </div>
+
+        <div>
+          <label for="Qualification" class="formbold-form-label">Qualification</label>
+          <input type="text" name="qualification" id="address" class="formbold-form-input" placeholder="Last Qualification" required>
+        </div>
+
+
+
+        <!-- <button type="submit" class="formbold-btn" onclick="fun()">Submit</button> -->
+        <input type="submit" class="formbold-btn" onclick="fun()" id="sub">
+        <button class="formbold-btn , reset" type="button" id="resetButton"  onclick="fun()">Reset</button>
+      </form>
+    </div>
+  </div>
+
+ <script>
+// From Info Data Start
+let form = document.querySelector("form");
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    document.querySelector("#sub").value = "Submitting...";
+    let data = new FormData(form);
+    fetch('https://script.google.com/macros/s/AKfycbzK5r9W9ZJIt4TzZZaYO6YqQ8wjXgIP2ZxecqdoanWcNmY7isBhLGEw8b34icG-fll9/exec', {
+        method: "POST",
+        body: data
+    })
+    .then(res => res.text())
+    .then(data => {
+        document.querySelector("#msg").innerHTML = data;
+        document.querySelector("#sub").value = "Submit";
+    });
+});
+
+// From Info Data END
+ 
+//Check Option- Start
+  const otherOption = document.getElementById('other-option');
+  const expertiseOptions = document.querySelectorAll('.expertise-option');
+
+  otherOption.addEventListener('change', function () {
+    if (this.checked) {
+      // Uncheck all other checkboxes
+      expertiseOptions.forEach(option => {
+        option.checked = false;
+      });
+    }
+  });
+
+  expertiseOptions.forEach(option => {
+    option.addEventListener('change', function () {
+      if (this.checked) {
+        // Uncheck "Other" if any of these are checked
+        otherOption.checked = false;
+      }
+    });
+  });
+//Check Option- END
+
+// Form reset function
+  document.getElementById('resetButton').addEventListener('click', () => {
+      document.getElementById('myForm').reset();
+    });
+
+
+
+  </script>
+</body>
+</html>
